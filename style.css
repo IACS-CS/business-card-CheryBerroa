@@ -1,1 +1,13 @@
-/* Your code here */
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    background-color: rgba(220, 202, 171, 0.91);
+    font-weight: bold;
+    padding: 10px; 
+    border-radius: 10px; 
+    max-width: 600px; 
+    margin: 20px auto; 
+    box-shadow: 0 4px 15px rgba(6, 1, 1, 0.1);
+}
+
