@@ -1,59 +1,108 @@
 body {
-    background-color: #f0f8ff; /* Very light blue background */
-    color: #333; /* Dark text color for contrast */
-    font-family: Arial, sans-serif;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f8f9fa;
+}
+
+.header {
     text-align: center;
-    margin: 0;
-    padding: 20px;
+    margin-bottom: 30px; /* Space below header */
+    padding: 10px; /* Internal padding for aesthetics */
 }
 
-h1 {
-    margin: 0;
-    font-size: 2.5em; /* Large header */
-}
-
-.attribution {
-    font-size: 1.1em; /* Smaller attribution text */
-    margin-top: 5px;
-}
-
-.card {
-    background-color: white; /* White background for cards */
-    border-radius: 8px; /* Rounded corners */
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
-    margin: 20px auto; /* Centered with margin */
-    padding: 20px; /* Padding inside the card */
-    max-width: 400px; /* Max width for cards */
-}
-
-.card h2 {
-    margin-top: 0; /* Remove top margin */
-    font-size: 1.5em; /* Subheader size */
-    color: #e62323; /* Darker blue for subheader */
+.card, .contact-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 20px; /* Internal padding for better spacing */
+    margin: 15px; /* Space between cards */
+    width: 320px; /* Consistent width */
+    background-color: #ffffff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
 .card-body {
-    text-align: center; /* Center text and image */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 15px; /* Space below card body */
 }
 
-.responsive-image {
-    max-width: 100%; /* Responsive image */
-    height: auto; /* Maintain aspect ratio */
-    border-radius: 4px; /* Rounded corners for image */
-    margin: 10px 0; /* Space around image */
+.card-image {
+    margin-bottom: 15px; /* Space below image */
+    border-radius: 5px; /* Rounded corners */
 }
 
 .contact-info {
-    text-align: left; /* Left-align contact info */
-    font-size: 1.1em; /* Font size for contact info */
-    margin-top: 10px; /* Space above contact info */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Align left for better readability */
+    width: 100%;
+    margin-top: 15px; /* Space above contact info */
+    padding: 10px; /* Internal padding */
+    border-top: 1px solid #ccc; /* Border for separation */
+}
+
+.contact-item {
+    display: inline-block; /* Allows for flexible layout */
+    margin: 8px 0; /* Vertical spacing */
+    padding: 5px; /* Padding for touch targets */
+    border: 1px solid #e0e0e0; /* Optional border */
+    border-radius: 4px; /* Slight rounding */
+}
+
+.sources {
+    margin-top: 30px; /* Space above sources */
+    text-align: center;
+    padding: 10px; /* Internal padding */
+    border-top: 1px solid #ccc; /* Visual separation */
+}
+
+.image-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 20px; /* Space above image section */
+    padding: 10px; /* Padding for the image section */
+    border: 1px solid #ccc; /* Border for grouping */
+    border-radius: 8px; /* Rounded corners */
+}
+
+.image-section-img {
+    margin-bottom: 10px; /* Space below image */
+}
+
+h2 {
+    color: #ee0f0f; /* Attractive color for headers */
+    margin-bottom: 10px; /* Space below heading */
+    padding: 5px; /* Padding for headers */
+    border-bottom: 2px solid #e41212; /* Underline effect for emphasis */
 }
 
 footer {
-    margin-top: 20px; /* Space above footer */
-    font-size: 0.9em; /* Footer font size */
-    color: #666; /* Lighter text color for footer */
+    text-align: center;
+    margin-top: 20px;
+    padding: 10px 0;
+    background-color: #f1f1f1;
+    width: 100%;
 }
 
+.image-attribution {
+    font-size: 0.8em;
+    color: #df1d1d00;
+    margin-top: 5px; /* Space above attribution */
+}
 
-
+/* Break alignment for creative effect */
+.card:last-child {
+    transform: translateY(-10px); /* Slightly offset the last card for emphasis */
+}
